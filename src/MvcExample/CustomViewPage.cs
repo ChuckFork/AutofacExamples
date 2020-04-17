@@ -12,5 +12,7 @@ namespace MvcExample
     public abstract class CustomViewPage<TModel> : WebViewPage<TModel>
     {
         public IViewDependency Dependency { get; set; }
+
+        public IChuckDependency ChuckDependency { get; set; }
     }
 }

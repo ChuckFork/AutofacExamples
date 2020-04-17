@@ -74,6 +74,7 @@ namespace MvcExample
             // Register application dependencies.
             builder.RegisterType<ViewDependency>().As<IViewDependency>();
             builder.RegisterType<FilterDependency>().As<IFilterDependency>();
+            builder.RegisterType<ChuckDependency>().As<IChuckDependency>();
 
             // MVC - Set the dependency resolver to be Autofac.
             var container = builder.Build();
